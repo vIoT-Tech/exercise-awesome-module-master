@@ -1,0 +1,129 @@
+# GitHub Actions does not properly support variables in YAML files.
+# As a workaround, a job can be used to produce output parameters,
+# which can be referenced by other jobs.
+
+name: Parameters
+
+on:
+  workflow_call:
+    inputs:
+      ubuntu_image:
+        description: 'Name of the Ubuntu image.'
+        required: false
+        default: 'ubuntu-24.04'
+        type: string
+      package_name:
+        description: 'Base-name of all GHDL artifacts.'
+        required: true
+        type: string
+      library_name:
+        description: 'Base-name of all libghdl artifacts.'
+        required: true
+        type: string
+      pyghdl_name:
+        description: 'Base-name of all pyghdl artifacts.'
+        required: true
+        type: string
+      testsuites:
+        description: "List of GHDL testsuites to execute while testing (space separated). Alternatively: 'all' or 'none'"
+        required: false
+        default: 'all'
+        type: string
+
+    outputs:
+      ghdl_version:
+        description: "GHDL's version."
+        value: ${{ jobs.Parameters.outputs.ghdl_version }}
+      pyghdl_version:
+        description: "pyGHDL's version."
+        value: ${{ jobs.Parameters.outputs.pyghdl_version }}
+      pacghdl_version:
+        description: "GHDL's version for MSYS2."
+        value: ${{ jobs.Parameters.outputs.pacghdl_version }}
+      setup_version:
+        description: "GHDL's version for setup-ghdl."
+        value: ${{ jobs.Parameters.outputs.setup_version }}
+      ghdl_basename:
+        description: "Artifact basename for GHDL."
+        value: ${{ inputs.package_name }}
+      libghdl_basename:
+        description: "Artifact basename for libghdl."
+        value: ${{ inputs.library_name }}
+      pyghdl_basename:
+        description: "Artifact basename for pyghdl."
+        value: ${{ inputs.pyghdl_name }}
+      testsuites:
+        description: "List of GHDL testsuites to execute while testing (space separated)."
+        value: ${{ jobs.Parameters.outputs.testsuites }}
+
+jobs:
+  Parameters:
+    runs-on: ${{ inputs.ubuntu_image }}
+    outputs:
+      testsuites:      ${{ steps.params.outputs.testsuites }}
+      ghdl_version:    ${{ steps.params.outputs.ghdl_version }}
+      pyghdl_version:  ${{ steps.params.outputs.pyghdl_version }}
+      pacghdl_version: ${{ steps.params.outputs.pacghdl_version }}
+      setup_version:   ${{ steps.params.outputs.setup_version }}
+
+    steps:
+      - name: '⏬ Checkout'
+        uses: actions/checkout@v4
+
+      - name: Generate 'params' and 'python_jobs'
+        id: params
+        run: |
+          if [ '${{ inputs.testsuites }}' == 'all' ]; then
+            tee "${GITHUB_OUTPUT}" <<EOF
+          testsuites=sanity gna vests synth vpi vhpi
+          EOF
+          else
+            tee "${GITHUB_OUTPUT}" <<EOF
+          testsuites=${{ inputs.testsuites }}
+          EOF
+          fi
+
+          ghdl_version=$(grep "^ghdl_version=\".*\"$" ./configure)
+          ghdl_version=${ghdl_version/ghdl_version=/}
+          ghdl_version=${ghdl_version//\"/}
+          echo "GHDL version: $ghdl_version"
+          tee -a "${GITHUB_OUTPUT}" <<EOF
+          ghdl_version=${ghdl_version}
+          EOF
+
+          if [[ "${ghdl_version}" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            pyghdl_version="${ghdl_version}"
+            pacghdl_version="${ghdl_version}"
+            setup_version="${ghdl_version}"
+          elif [[ "${ghdl_version}" =~ ^[0-9]+\.[0-9]+\.[0-9]+-dev$ ]]; then
+            pyghdl_version="${ghdl_version/-dev/.dev0}"
+            pacghdl_version="${ghdl_version/-dev/.dev}-1"
+            setup_version="nightly"
+          elif [[ "${ghdl_version}" =~ ^[0-9]+\.[0-9]+\.[0-9]+-rc[0-9]+$ ]]; then
+            pyghdl_version="${ghdl_version/-rc/rc}"
+            pacghdl_version="${ghdl_version/-rc/.rc}-1"
+            setup_version="${ghdl_version}"
+          else
+            echo "::error title=Parameters::Unsupported GHDL version pattern '${ghdl_version}'."
+            exit 1
+          fi
+
+          tee -a "${GITHUB_OUTPUT}" <<EOF
+          pyghdl_version=${pyghdl_version}
+          EOF
+
+          tee -a "${GITHUB_OUTPUT}" <<EOF
+          pacghdl_version=${pacghdl_version}
+          EOF
+
+          tee -a "${GITHUB_OUTPUT}" <<EOF
+          setup_version=${setup_version}
+          EOF
+
+          cat "${GITHUB_OUTPUT}"
+
+      - name: Check variables
+        run: |
+          echo "ghdl_version:    ${{ steps.params.outputs.ghdl_version }}"
+          echo "pyghdl_version:  ${{ steps.params.outputs.pyghdl_version }}"
+          echo "pacghdl_version: ${{ steps.params.outputs.pacghdl_version }}"

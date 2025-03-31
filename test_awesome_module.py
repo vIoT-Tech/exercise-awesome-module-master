@@ -4,7 +4,7 @@ import cocotb
 import subprocess
 import sys
 from cocotb.runner import Command
-from itertools import product
+from itertools import product # VAS: no import possible...?!
 from glob import glob
 from typing import List
 

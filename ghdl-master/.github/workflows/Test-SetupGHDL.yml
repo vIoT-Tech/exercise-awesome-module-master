@@ -1,0 +1,109 @@
+name: Verification of setup-ghdl
+
+on:
+  workflow_call:
+    inputs:
+      os_image:
+        required: true
+        type: string
+      os_name:
+        required: true
+        type: string
+      ghdl_version:
+        description: 'Version of the GHDL.'
+        required: true
+        type: string
+      runtime:
+        description: 'MSYS2 runtime if MSYS2 is used.'
+        required: true
+        type: string
+      ghdl_backend:
+        description: 'GHDL''s backend.'
+        required: true
+        type: string
+      expected_ghdl_version:
+        description: 'Expected version of the GHDL.'
+        required: true
+        type: string
+
+jobs:
+  Setup-GHDL-Nightly:
+    name: Setup GHDL ${{ inputs.ghdl_backend }} on ${{ inputs.os_name }} ${{ inputs.runtime }}
+    runs-on: ${{ inputs.os_image }}
+
+    steps:
+#      - name: Detect correct shell
+#        id: detect
+#        shell: bash
+#        run: |
+#          # Detect correct shell
+#          if [[ "${{ matrix.name }}" == "Windows" && "${{ matrix.runtime }}" != "" ]]; then
+#            printf "shell=msys2 {0}" >> $GITHUB_OUTPUT
+#          else
+#            printf "shell=bash" >> $GITHUB_OUTPUT
+#          fi
+
+      - name: '🟦 Setup MSYS2 for ${{ inputs.runtime }}'
+        uses: msys2/setup-msys2@v2
+        if: inputs.runtime != ''
+        with:
+          msystem: ${{ inputs.runtime }}
+          update: true
+
+      - name: Setup GHDL ${{ inputs.ghdl_backend }}
+        uses: ghdl/setup-ghdl@v1
+        with:
+          version: ${{ inputs.ghdl_version }}
+          backend: ${{ inputs.ghdl_backend }}
+          runtime: ${{ inputs.runtime }}
+          investigate: true
+
+      - name: Verify GHDL version via Bash
+        if: inputs.os_name == 'Ubuntu' || inputs.os_name == 'macOS' || ( inputs.os_name == 'Windows' && inputs.runtime == '' )
+        shell: bash   # ${{ steps.detect.outputs.shell }}
+        run: |
+          ANSI_LIGHT_RED=$'\x1b[91m'
+          ANSI_LIGHT_GREEN=$'\x1b[92m'
+          ANSI_NOCOLOR=$'\x1b[0m'
+
+          printf "which ghdl: %s\n" "$(which ghdl)"
+
+          expected="${{ inputs.expected_ghdl_version }}"
+          printf "%s" "Verify GHDL version '${expected}' ... "
+          if [[ "$(ghdl --version | head -n 1)" =~ ${expected//./\\.} ]]; then
+            printf "${ANSI_LIGHT_GREEN}%s${ANSI_NOCOLOR}\n" "[OK]"
+          else
+            printf "${ANSI_LIGHT_RED}%s\${ANSI_NOCOLOR}n" "[FAILED]"
+            printf "::warning title=%s::%s\n" "Test-SetupGHDL" "GHDL version doesn't match."
+
+            ghdl --version
+          fi
+
+      - name: Verify GHDL version via Bash
+        if: inputs.os_name == 'Windows' && inputs.runtime != ''
+        # BUG: GitHub Action doesn't accept contexts for shell
+        shell: "msys2 {0}"   # ${{ steps.detect.outputs.shell }}
+        run: |
+          ANSI_LIGHT_RED=$'\x1b[91m'
+          ANSI_LIGHT_GREEN=$'\x1b[92m'
+          ANSI_NOCOLOR=$'\x1b[0m'
+
+          printf "which ghdl: %s\n" "$(which ghdl)"
+
+          expected="${{ inputs.expected_ghdl_version }}"
+          printf "%s" "Verify GHDL version '${expected}' ... "
+          if [[ "$(ghdl --version | head -n 1)" =~ ${expected//./\\.} ]]; then
+            printf "${ANSI_LIGHT_GREEN}%s${ANSI_NOCOLOR}\n" "[OK]"
+          else
+            printf "${ANSI_LIGHT_RED}%s${ANSI_NOCOLOR}\n" "[FAILED]"
+            printf "::warning title=%s::%s\n" "Test-SetupGHDL" "GHDL version doesn't match."
+
+            ghdl --version
+          fi
+
+      - name: Verify on Windows (native)
+        if: inputs.os_name == 'Windows' && inputs.runtime == ''
+        shell: powershell
+        run: |
+          echo $(Get-Command ghdl).Source
+          ghdl --version
