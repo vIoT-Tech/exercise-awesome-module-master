@@ -1,0 +1,42 @@
+CAPI=2:
+name : open-logic:{{tutorial_library}}:quartus_tutorial:{{version}}
+description : {{codebase}}; quartus tutorial for open-logic, targetting DE0-CV board
+
+filesets:
+
+  de0_cv:
+    files:
+      - {{fileDir}}timing.sdc  : {file_type : SDC}
+      - {{fileDir}}pinout.tcl  : {file_type : tclSource}
+      
+  rtl:
+    files:
+      - {{fileDir}}quartus_tutorial.vhd : {file_type : vhdlSource}
+    depend :
+      - "open-logic:{{library}}:base"
+      - "open-logic:{{library}}:intf"
+
+targets:
+  default: &default
+    filesets : [rtl]
+    toplevel: ["is_toplevel? (quartus_tutorial)"]
+
+  de0_cv:
+    default_tool : quartus
+    filesets : [rtl, de0_cv]
+    tools:
+      quartus:
+        family : Cyclone V
+        device : 5CEBA4F23C7
+        board_device_index : 2
+    toplevel: quartus_tutorial
+
+{%- if library == "open-logic" %}
+
+provider:
+  name    : github
+  user    : open-logic
+  repo    : open-logic
+  version : {{version}}
+{%- endif %}
+
