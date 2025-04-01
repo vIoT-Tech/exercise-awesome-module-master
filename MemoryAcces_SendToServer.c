@@ -12,6 +12,22 @@
  *   ./dma_to_eth 192.168.1.100 5001 /dev/xdma0_c2h_0
  ***********************************************************/
 
+//  How It Works
+// 	1.	Open the DMA Device
+// 	•	The device is typically presented by the Xilinx XDMA driver (or similar).
+// 	•	In real designs, the PL logic + AXI DMA IP block continuously places data in DDR or a streaming FIFO, which the driver exposes as a read interface.
+// 	2.	Create & Connect Socket
+// 	•	A standard POSIX TCP socket is created with socket().
+// 	•	connect() is called to establish a TCP connection to <server_ip>:<server_port>.
+// 	3.	Read from DMA, Send to Server
+// 	•	read(dma_fd, dmaBuffer, DMA_BUFFER_SIZE) blocks (or returns data) depending on how the driver is configured (stream, polled, etc.).
+// 	•	send(sock_fd, dmaBuffer, bytesRead, 0) pushes data across the TCP socket.
+// 	4.	Looping / Larger Buffers
+// 	•	In practice, you would place the read() + send() calls inside a while loop (until a termination condition).
+// 	•	Possibly use larger, aligned buffers or mmap for efficiency.
+
+
+
  #include <stdio.h>
  #include <stdlib.h>
  #include <string.h>
