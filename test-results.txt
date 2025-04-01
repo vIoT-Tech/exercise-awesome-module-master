@@ -1,0 +1,399 @@
+cachedir: .pytest_cache
+rootdir: /home/exercise-awesome-module
+collected 1 item                                                                                                                                                
+
+test_awesome_module.py::test_awesome_module INFO: Running command ghdl -i --work=olo --std=08 -frelaxed /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_wconv_n2m.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_fifo_sync.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_strobe_gen.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_fifo_packet.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cc_bits.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_arb_rr.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cc_pulse.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pkg_attribute.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_decode_firstbit.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_strobe_div.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_wconv_n2xn.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_ram_sp.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pkg_math.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_prbs.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_delay_cfg.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_arb_prio.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_crc.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pl_stage.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cam.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cc_status.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_wconv_xn2n.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cc_simple.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pkg_logic.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cc_n2xn.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cc_reset.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_ram_tdp.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_dyn_sft.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_ram_sdp.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_fifo_async.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pkg_array.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_flowctrl_handler.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_reset_gen.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_delay.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cc_handshake.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_tdm_mux.vhd /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_cc_xn2n.vhd /home/exercise-awesome-module/open-logic/src/intf/vhdl/olo_intf_spi_slave.vhd /home/exercise-awesome-module/open-logic/src/intf/vhdl/olo_intf_debounce.vhd /home/exercise-awesome-module/open-logic/src/intf/vhdl/olo_intf_clk_meas.vhd /home/exercise-awesome-module/open-logic/src/intf/vhdl/olo_intf_i2c_master.vhd /home/exercise-awesome-module/open-logic/src/intf/vhdl/olo_intf_spi_master.vhd /home/exercise-awesome-module/open-logic/src/intf/vhdl/olo_intf_uart.vhd /home/exercise-awesome-module/open-logic/src/intf/vhdl/olo_intf_sync.vhd /home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_lite_slave.vhd /home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd /home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_full.vhd /home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_pkg_protocol.vhd /home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_pl_stage.vhd in directory /home/exercise-awesome-module/sim_build
+INFO: Running command ghdl -i --work=bl --std=08 /home/exercise-awesome-module/vhdl/AwesomeModule.vhd in directory /home/exercise-awesome-module/sim_build
+analyze /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pkg_array.vhd
+analyze /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pkg_math.vhd
+analyze /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pkg_logic.vhd
+analyze /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_prbs.vhd
+analyze /home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_pkg_protocol.vhd
+analyze /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_pkg_attribute.vhd
+analyze /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_ram_sdp.vhd
+/home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_ram_sdp.vhd:68:21:warning: type of a shared variable must be a protected type [-Wshared]
+    shared variable Mem_v : Data_t(Depth_g - 1 downto 0) := (others => (others => '0'));
+                    ^
+analyze /home/exercise-awesome-module/open-logic/src/base/vhdl/olo_base_fifo_sync.vhd
+analyze /home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd
+analyze /home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_lite_slave.vhd
+analyze /home/exercise-awesome-module/vhdl/AwesomeModule.vhd
+elaborate awesomemodule
+INFO: Running command ghdl -r --work=bl --std=08 -frelaxed awesomemodule --vpi=/home/venv/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_ghdl.so --vcd=../wave.vcd in directory /home/exercise-awesome-module/sim_build
+loading VPI module '/home/venv/lib/python3.12/site-packages/cocotb/libs/libcocotbvpi_ghdl.so'
+     -.--ns INFO     gpi                                ..mbed/gpi_embed.cpp:108  in set_program_name_in_venv        Using Python virtual environment interpreter at /home/venv/bin/python
+     -.--ns INFO     gpi                                ../gpi/GpiCommon.cpp:101  in gpi_print_registered_impl       VPI registered
+VPI module loaded!
+     0.00ns INFO     cocotb                             Running on GHDL version 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]
+     0.00ns INFO     cocotb                             Running tests with cocotb v1.9.2 from /home/venv/lib/python3.12/site-packages/cocotb
+     0.00ns INFO     cocotb                             Seeding Python random module with 1743443152
+     0.00ns INFO     cocotb.regression                  Found test tb.tb_awesome_module.test_awesome_module
+     0.00ns INFO     cocotb.regression                  running test_awesome_module (1/1)
+vpi_get_str: unhandled property
+vpi_get_str: unhandled property
+vpi_get_str: unhandled property
+vpi_get_str: unhandled property
+vpi_get_str: unhandled property
+vpi_get_str: unhandled property
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    AXI lite master (write)
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    cocotbext-axi version 0.1.24
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Copyright (c) 2020 Alex Forencich
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    https://github.com/alexforencich/cocotbext-axi
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    AXI lite master configuration:
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      Address width: 8 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      Byte size: 8 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      Data width: 32 bits (4 bytes)
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    AXI lite master signals:
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      awaddr width: 8 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      awprot: not present
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      awready width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      awvalid width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      wdata width: 32 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      wready width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      wstrb width: 4 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      wvalid width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      bready width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      bresp width: 2 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      bvalid width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    AXI lite master (read)
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    cocotbext-axi version 0.1.24
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Copyright (c) 2020 Alex Forencich
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    https://github.com/alexforencich/cocotbext-axi
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    AXI lite master configuration:
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      Address width: 8 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      Byte size: 8 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      Data width: 32 bits (4 bytes)
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    AXI lite master signals:
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      araddr width: 8 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      arprot: not present
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      arready width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      arvalid width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      rdata width: 32 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      rready width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      rresp width: 2 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl      rvalid width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    AXI slave model (write)
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    cocotbext-axi version 0.1.24
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Copyright (c) 2021 Alex Forencich
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    https://github.com/alexforencich/cocotbext-axi
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset de-asserted
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    AXI slave model configuration:
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      Address width: 64 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      ID width: 4 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      Byte size: 8 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      Data width: 32 bits (4 bytes)
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    AXI slave model signals:
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awaddr width: 64 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awburst width: 2 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awcache width: 4 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awid width: 4 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awlen width: 8 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awlock width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awprot width: 3 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awqos: not present
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awready width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awregion: not present
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awsize width: 3 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awuser: not present
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      awvalid width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      wdata width: 32 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      wlast width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      wready width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      wstrb width: 4 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      wuser: not present
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      wvalid width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      bid width: 4 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      bready width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      bresp width: 2 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      buser: not present
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data      bvalid width: 1 bits
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset de-asserted
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@0ms:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset asserted
+     0.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset asserted
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1873:7:@0ms:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:2025:7:@0ms:(assertion warning): NUMERIC_STD."/=": metavalue detected, returning TRUE
+../../src/ieee2008/numeric_std-body.vhdl:1265:7:@0ms:(assertion warning): NUMERIC_STD.">": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@10ns:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@10ns:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@10ns:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@10ns:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@10ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@10ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+   100.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.m_axi_data    Reset de-asserted
+   100.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000004 prot: 2 data: 03 00 00 00
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@100ns:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@110ns:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@110ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@110ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@120ns:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@120ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@120ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:3036:7:@130ns:(assertion warning): NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@130ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@140ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+   150.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000004 prot: 2 resp: 0 length: 4
+   150.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000008 prot: 2 data: 01 00 00 00
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@150ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@160ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@170ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@180ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@190ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+   200.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000008 prot: 2 resp: 0 length: 4
+   200.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 00 01 00 00 00 00 00
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@200ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@210ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@220ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@230ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@240ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@250ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@250ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@260ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@270ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@280ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+   290.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+   290.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@290ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@300ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@310ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@320ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@330ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+   340.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+   340.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@340ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@340ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@350ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@360ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@370ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@380ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+   390.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@390ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@400ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+../../src/ieee2008/numeric_std-body.vhdl:1651:7:@410ns:(assertion warning): NUMERIC_STD.">=": metavalue detected, returning FALSE
+  2700.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00010000 awlen: 255 awsize: 2 awprot: 0
+  5270.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00010400 awlen: 255 awsize: 2 awprot: 0
+  7830.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00010800 awlen: 255 awsize: 2 awprot: 0
+ 10390.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00010c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@12970ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 12980.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 13040.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 13040.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 13040.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 10 01 00 00 00 00 00
+ 13090.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 13170.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 13170.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 13220.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 13220.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 13270.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 13330.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00011000 awlen: 255 awsize: 2 awprot: 0
+ 15900.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00011400 awlen: 255 awsize: 2 awprot: 0
+ 18460.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00011800 awlen: 255 awsize: 2 awprot: 0
+ 21020.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00011c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@23600ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 23610.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 23670.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 23670.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 23670.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 20 01 00 00 00 00 00
+ 23720.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 23800.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 23800.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 23850.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 23850.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 23900.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 23960.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00012000 awlen: 255 awsize: 2 awprot: 0
+ 26530.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00012400 awlen: 255 awsize: 2 awprot: 0
+ 29090.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00012800 awlen: 255 awsize: 2 awprot: 0
+ 31650.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00012c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@34230ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 34240.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 34300.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 34300.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 34300.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 30 01 00 00 00 00 00
+ 34350.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 34430.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 34430.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 34480.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 34480.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 34530.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 34590.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00013000 awlen: 255 awsize: 2 awprot: 0
+ 37160.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00013400 awlen: 255 awsize: 2 awprot: 0
+ 39720.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00013800 awlen: 255 awsize: 2 awprot: 0
+ 42280.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00013c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@44860ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 44870.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 44930.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 44930.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 44930.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 40 01 00 00 00 00 00
+ 44980.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 45060.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 45060.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 45110.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 45110.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 45160.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 45220.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00014000 awlen: 255 awsize: 2 awprot: 0
+ 47790.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00014400 awlen: 255 awsize: 2 awprot: 0
+ 50350.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00014800 awlen: 255 awsize: 2 awprot: 0
+ 52910.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00014c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@55490ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 55500.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 55560.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 55560.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 55560.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 50 01 00 00 00 00 00
+ 55610.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 55690.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 55690.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 55740.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 55740.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 55790.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 55850.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00015000 awlen: 255 awsize: 2 awprot: 0
+ 58420.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00015400 awlen: 255 awsize: 2 awprot: 0
+ 60980.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00015800 awlen: 255 awsize: 2 awprot: 0
+ 63540.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00015c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@66120ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 66130.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 66190.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 66190.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 66190.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 60 01 00 00 00 00 00
+ 66240.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 66320.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 66320.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 66370.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 66370.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 66420.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 66480.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00016000 awlen: 255 awsize: 2 awprot: 0
+ 69050.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00016400 awlen: 255 awsize: 2 awprot: 0
+ 71610.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00016800 awlen: 255 awsize: 2 awprot: 0
+ 74170.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00016c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@76750ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 76760.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 76820.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 76820.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 76820.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 70 01 00 00 00 00 00
+ 76870.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 76950.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 76950.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 77000.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 77000.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 77050.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 77110.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00017000 awlen: 255 awsize: 2 awprot: 0
+ 79680.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00017400 awlen: 255 awsize: 2 awprot: 0
+ 82240.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00017800 awlen: 255 awsize: 2 awprot: 0
+ 84800.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00017c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@87380ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 87390.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 87450.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 87450.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 87450.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 80 01 00 00 00 00 00
+ 87500.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 87580.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 87580.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 87630.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 87630.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 87680.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 87740.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00018000 awlen: 255 awsize: 2 awprot: 0
+ 90310.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00018400 awlen: 255 awsize: 2 awprot: 0
+ 92870.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00018800 awlen: 255 awsize: 2 awprot: 0
+ 95430.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00018c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@98010ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+ 98020.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+ 98080.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+ 98080.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000000 prot: 2 data: 01 00 00 00
+ 98080.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000010 prot: 2 data: 00 90 01 00 00 00 00 00
+ 98130.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000000 prot: 2 resp: 0 length: 4
+ 98210.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000010 prot: 2 resp: 0 length: 8
+ 98210.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x00000018 prot: 2 data: 00 10 00 00
+ 98260.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x00000018 prot: 2 resp: 0 length: 4
+ 98260.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write start addr: 0x0000000c prot: 2 data: 01 00 00 00
+ 98310.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Write complete addr: 0x0000000c prot: 2 resp: 0 length: 4
+ 98370.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00019000 awlen: 255 awsize: 2 awprot: 0
+100940.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00019400 awlen: 255 awsize: 2 awprot: 0
+103500.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00019800 awlen: 255 awsize: 2 awprot: 0
+106060.00ns INFO     cocotb.awesomemodule.m_axi_data    Write burst awid: 0x0 awaddr: 0x00019c00 awlen: 255 awsize: 2 awprot: 0
+/home/exercise-awesome-module/open-logic/src/axi/vhdl/olo_axi_master_simple.vhd:438:17:@108640ns:(assertion error): ###ERROR###: olo_axi_master_simple internal error --> WrRespFifo Empty
+108650.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read start addr: 0x00000000 prot: 2 length: 4
+108710.00ns INFO     cocotb.awesomemodule.s_axi_ctrl    Read complete addr: 0x00000000 prot: 2 resp: 0 data: 01 00 00 00
+108710.00ns INFO     cocotb.regression                  test_awesome_module passed
+108710.00ns INFO     cocotb.regression                  **************************************************************************************************
+                                                        ** TEST                                      STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+                                                        **************************************************************************************************
+                                                        ** tb.tb_awesome_module.test_awesome_module   PASS      108710.00           1.82      59796.04  **
+                                                        **************************************************************************************************
+                                                        ** TESTS=1 PASS=1 FAIL=0 SKIP=0                         108710.00           1.95      55801.32  **
+                                                        **************************************************************************************************
+                                                        
+INFO: Results file: /home/exercise-awesome-module/sim_build/test_awesome_module.None
+PASSED
+
+======================================================================= warnings summary ========================================================================
+test_awesome_module.py:6
+  /home/exercise-awesome-module/test_awesome_module.py:6: UserWarning: Python runners and associated APIs are an experimental feature and subject to change.
+    from cocotb.runner import Command
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================================================= 1 passed, 1 warning in 5.25s ==================================================================

@@ -1,4 +1,4 @@
-"""Filename globbing utility."""
+# """Filename globbing utility."""
 
 import contextlib
 import os
@@ -10,11 +10,9 @@ import operator
 import stat
 import sys
 
-
 __all__ = ["glob", "iglob", "escape", "translate"]
 
-def glob(pathname, *, root_dir=None, dir_fd=None, recursive=False,
-        include_hidden=False):
+def glob(pathname, *, root_dir=None, dir_fd=None, recursive=False, include_hidden=False):
     """Return a list of paths matching a pathname pattern.
 
     The pattern may contain simple shell-style wildcards a la
