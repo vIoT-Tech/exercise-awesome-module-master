@@ -1,9 +1,0 @@
-ENTITY ent IS 
-END ENTITY ent ;
-
-ARCHITECTURE behav OF ent IS
-	COMPONENT comp IS 
-	END COMPONENT comp;
-BEGIN 
-	comp.ex; 
-END ARCHITECTURE behav;

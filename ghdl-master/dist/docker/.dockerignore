@@ -1,8 +1,0 @@
-# Exclude documentation
-README.md
-
-# Docker files
-Dockerfile.*
-
-# Exclude all Git related directories and files
-.git*

@@ -1,2 +1,0 @@
-*.sh text eol=lf
-/dist/msys2/*/PKGBUILD text eol=lf

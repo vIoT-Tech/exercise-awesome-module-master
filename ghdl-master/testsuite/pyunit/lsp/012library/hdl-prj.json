@@ -1,6 +1,0 @@
-{
-    "files" : [
-         { "file" : "pkg1.vhdl", "language" : "vhdl", "library" : "lib1" },
-         { "file" : "ent1.vhdl", "language" : "vhdl" }
-     ]
-}
